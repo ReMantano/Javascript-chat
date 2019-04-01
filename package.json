@@ -1,0 +1,32 @@
+{
+  "name": "Javascript chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "firebase": "^5.8.4",
+    "firebase-tools": "^6.4.0",
+    "fs": "^0.0.1-security",
+    "jsdoc": "^3.5.5",
+    "middleware": "^1.0.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7",
+    "sinon": "^7.3.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "test": "mocha -recursive test/**/*.js",
+    "start": "node Server/start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}

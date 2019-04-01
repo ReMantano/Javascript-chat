@@ -1,0 +1,57 @@
+<div style="display:flex; align-items: center; justify-content: center;">
+	<div id="parent" style="clear:both;text-align:right;line-height:25px;">
+		<form name="config" action="#">
+			<label style="float: left;">Chat title:</label>
+			<input type="text" name="title">
+			<br />
+			<br />
+			<label style="float: left;">Bot name:</label>
+			<input type="text" name="bot">
+			<br />
+			<br />
+			<label style="float: left;">Chat url:</label>
+			<input type="text" name="url">
+			<br />
+			<br />
+			<label style="float: left;">Css class:</label>
+			<input type="text" name="class">
+			<br />
+			<br />
+			<label style="float: left;"> Position </label>
+			<select name="float">
+				<option id="left" value="left">Left</option>
+				<option id="right" value="right">Right</option>
+			</select>
+			<br />
+			<br />
+			<label style="float: left;">UI</label>
+			Allow drag<input type="checkbox" name="isMove">
+			<br />
+			<br />
+			Allow collapse<input type="checkbox" name="isCollapse">
+			<br />
+			<br />
+			Requier name<input type="checkbox" name="isRequestName">
+			<br />
+			<br />
+			Show date<input type="checkbox" name="isShowDate">
+			<br />
+			<br />
+			<label style="float: left;">Network </label>
+			<input type="radio" name="network" value="XHR">XHR
+			<input type="radio" name="network" value="fetch">Fetch
+			<br />
+			<br />
+			<label style="float: left;">Updates </label>
+			<input type="radio" name="updates" value="Long polling">Long polling
+			<input type="radio" name="updates" value="Refetch">Refetch
+			<br />
+			<br />
+			<button id="startChat" style="width: 300px; border-radius: 0 0 20px 20px;
+			background: rgba(255, 255, 255, 0.507) ;;
+			border-color: rgba(195, 207, 169, 0.596);">Run</button>
+
+		</form>
+	</div>
+</div>
+<script src="http://127.0.0.1:8080/WebContent/chat/script/buider" type="text/javascript"></script>

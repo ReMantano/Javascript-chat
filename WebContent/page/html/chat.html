@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>body{
+            background-color: rgb(21, 27, 27);
+            color:white;
+        }</style>
+    <link rel="stylesheet" href="http://127.0.0.1:8080/WebContent/chat/css" type="text/css" defer/>
+    <script src="http://127.0.0.1:8080/WebContent/common/connection/connection" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/connection/xhr" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/connection/fetch" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/polling/polling" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/polling/long" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/polling/short" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/common/chat" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/chat/script/chat" type="text/javascript"></script>
+    <script src="http://127.0.0.1:8080/WebContent/chat/script/buider" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = () => {let config = {
+            "chatName": "Test",
+            "isCollapseble": true,
+            "float": "left",
+            "botName": "Bob",
+            "databaseUrl": "http://127.0.0.1:8080",
+            "chatClass": "random",
+            "isShowData": true,
+            "isRequestName": true,
+            "isMove": true,
+            "networkType": "fetch",
+            "updatesType": "Long",
+            "status": "client"
+        };
+        var div = document.createElement("div");
+        div.style = "position: absolute; bottom: 0px; width: 100%";;
+        document.body.appendChild(div);
+        setTimeout(() => new ClientChat(config), 1000)
+    }
+    </script>
+</html>

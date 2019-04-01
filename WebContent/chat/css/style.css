@@ -1,0 +1,113 @@
+#chatHeaderBlock {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2em;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#chatExternalBlock{
+  float: right;
+  width: 30%;
+  position: absolute;
+  bottom: -60%;
+}
+
+#chatInnerBlock{
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  -webkit-transition: max-height 0.5s; 
+  -moz-transition: max-height 0.5s; 
+  -ms-transition: max-height 0.5s; 
+  -o-transition: max-height 0.5s; 
+  transition: max-height 0.5s;  
+}
+
+#chatMessagesField{
+	overflow-y: auto;
+	height: 350px;
+}
+
+#chatTextarea{
+  width: 85%;
+  background-color: transparent;
+  resize: none;
+  min-height: 50px;
+  padding: 10px;
+  border: none;
+}
+#chatSendButton{
+	float:right;
+	height: 74px;
+  width: 10%;
+  color: #fff;
+  border: none;
+  background: #248A52;
+  border-radius: 0 25px 25px 0;
+  outline:0px !important;
+  -webkit-appearance:none;;
+}
+#label{
+    text-align: center;
+}
+#chatHeaderBlock:hover{
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#chatForm{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0) 90% 100%);
+  border-radius: 25px 0 0 25px;
+  margin: 10px;
+  border:none;
+}
+
+.messageBlock{
+	border-radius: 25px;
+	text-align: center;
+	width: 30%;
+	margin-bottom: 15px;
+}
+
+.leftMessage{
+	background-color: #0D8800;
+	color: white;
+}
+
+.rightMessage{
+	margin-left: 70%;
+	background-color: #133AAC;
+	color: white;
+}
+
+#chatTextarea:focus{
+  outline:0px !important;
+  -webkit-appearance:none;;
+}
+
+#chatSendButton:hover{
+  background: rgb(45, 138, 36);;
+}
+
+#chatSendButton:active{
+  background: green;
+}
+
+.visible{
+  max-height: 450px;
+}
+
+.hidden{
+  max-height: 0px;
+}
+::-webkit-scrollbar {
+  background: transparent; 
+}

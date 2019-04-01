@@ -1,0 +1,52 @@
+<div id="externalBlock">
+    <p id="header">Operator dashboard</p>
+    <div id="usersBlock">
+        <div id="sortAndFilterBlock">
+            <form name="sortAndFilterUsers">
+                <input id="filterField" name="filterBy" type="text" placeholder="Filter">
+                <br />
+                <select id="sortField" name="sortBy" placeholder="SortBy">
+                    <option value="name">Name</option>
+                    <option value="id">Id</option>
+                    <option value="status">Status</option>
+                </select>
+            </form>
+        </div>
+        <div id="usersList">
+        </div>
+    </div>
+    <div id="activeUserBlock">
+        <p id="userHeader">Active: </p>
+        <button class="closeActiveUserButton">X</button>
+        <div id="chatBlock">
+            <p id="chatHeader">Chat</p>
+            <div id="messagesBlock"></div>
+            <div id="sendMessagesBlock">
+                <form name="sendMessages">
+                    <textarea id="textField" placeholder="Writes messages to user"></textarea>
+                    <br />
+                    <button class="sendButton">Send</button>
+                </form>
+            </div>
+        </div>
+        <div id="controlBlock">
+            <p id="controlHeader">Control</p>
+            <div id="commandBlock">
+                <form name="commandForm">
+                    Command:
+                    <select name="commandType">
+                        <option value="location">Location</option>
+                        <option value="question">Question</option>
+                    </select>
+                    <input type="text" name="commandParam">
+                    <button class="runCommand">Run</button>
+                </form>
+            </div>
+            <div id="logBlock">
+                <p id="logHeader">Log</p>
+                <div id="logList">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
